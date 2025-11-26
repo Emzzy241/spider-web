@@ -1,5 +1,4 @@
 import React from 'react';
-import imageSrc from "../../assets/images/step-1.jpg"
 
 const Layout = ({ children, imageSrc, imageQuote, imageSubtext }) => {
   return (
