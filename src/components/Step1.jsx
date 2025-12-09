@@ -1,4 +1,5 @@
-import IMAGES from '../../public/assets/images/Images';
+// import IMAGES from '../assets/images/Images';
+import IMAGES from '../constants/imagePaths';
 import React from 'react';
 import Layout from './Shared/Layout';
 import ProgressHeader from './Shared/ProgressHeader';
@@ -7,6 +8,7 @@ const Step1 = ({ onNext, headerProps }) => { // Accept headerProps
   const quote = "Keep your reputation, clients, and momentum forever, no matter what happens to any freelance platform.";
   const subtext = "Giving You A Stable Career";
   const imgSrc = IMAGES.stepImage1;
+  console.log(imgSrc);
 
   // ... (SocialButton component remains the same) ...
 

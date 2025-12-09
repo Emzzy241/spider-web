@@ -3,6 +3,7 @@ import Step1 from './components/Step1';
 import Step2 from './components/Step2';
 import Step3 from './components/Step3';
 import ProgressHeader from './components/Shared/ProgressHeader'; // Import needed for conditional rendering
+import { useNavigate } from 'react-router-dom';
 
 const SignupFlow = () => {
   const [currentStep, setCurrentStep] = useState(1);
@@ -15,10 +16,15 @@ const SignupFlow = () => {
   const handleBack = () => {
     setCurrentStep(prev => Math.max(prev - 1, 1));
   };
+
+  // ⬅️ Initialize the navigation function
+  const navigate = useNavigate();
   
   const handleFinish = () => {
     console.log('Signup Complete! Final Data:', userData);
     alert('Signup Complete! Check the console for collected data.');
+    // window.onload("/dashboard")
+    navigate("/dashboard");
   };
 
   const renderStep = () => {

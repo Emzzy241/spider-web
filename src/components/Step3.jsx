@@ -1,4 +1,4 @@
-import IMAGES from '../../public/assets/images/Images';
+import IMAGES from '../assets/images/Images';
 import React, { useState } from 'react';
 import Layout from './Shared/Layout';
 import ProgressHeader from './Shared/ProgressHeader';
